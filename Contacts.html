@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            width: 100vw;
+            background-color: blue;
+        }
+        .logo{
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .nav-links{
+            list-style: none;
+        }
+        .nav-links li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .nav-links li a:hover{
+            color:red;
+        }
+        .nav-links li a{
+            transition: 0.5s;
+        }
+        .fix{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        button{
+            padding: 15px;
+            color: white;
+            background-color: red;
+            border: red;
+            border-radius: 5px;
+    
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 10px;
+            
+
+        }
+        footer{
+            height: 60px;
+            width: 100vw;
+            color: white;
+            background: rgb(45, 48, 45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+    
+</head>
+<body>
+      <header>
+        <a href="#" class="logo">ExploreWorld</a>
+        <nav>
+        <ul class="nav-links"><li><a href="./index.html">Home</a></li>
+            <li><a href="./Destination.html">Destination</a></li>
+            <li><a href="./Tours.html" >Tours</a></li>
+            <li><a href="/Contacts.html">Contacts</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div class="fix"><h1><b>Contact Us</b></h1>
+        <p>We'd love to hear from you! Send as a message below</p>
+        <form action="">
+             <label for="Full Name">Full Name</label>
+        <input type="text" placeholder="Your Name " >
+
+        <label for="Email Address" >Email Address</label>
+        <input type="text" placeholder ="Your email">
+
+        <label for="Message">Message</label>
+        <textarea name="" id="" placeholder="Your message" cols="10px" rows="5px"></textarea>
+        <button>Send Message</button>
+        </form>
+        <footer>&copy;2026.ExploreWorld All rights reserved.</footer>
+       
+    </div>
+</body>
+</html>

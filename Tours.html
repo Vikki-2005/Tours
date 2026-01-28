@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            width: 100vw;
+            background-color: blue;
+        }
+        .logo{
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .nav-links{
+            list-style: none;
+        }
+        .nav-links li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .nav-links li a:hover{
+            color:red;
+        }
+        .nav-links li a{
+            transition: 0.5s;
+        }
+          .top{
+            height: 60px;
+            width: 100vw;
+            background-color: wheat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .pic{
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            grid-auto-rows: 400px;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .control{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 550px;
+        }
+        footer{
+            height: 60px;
+            width: 100vw;
+            color: white;
+            background: rgb(45, 48, 45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    
+</head>
+<body>
+      <header>
+        <a href="#" class="logo">ExploreWorld</a>
+        <nav>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Destination.html">Destination</a></li>
+            <li><a href="./Tours.html" >Tours</a></li>
+            <li><a href="/Contacts.html">Contacts</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div class="top">
+        <h3><b>Top Travel Tours</b></h3>
+        <p>Explore new horizons with a heart full of wanderlust</p>
+    </div>
+    <div class="control">
+     <div class="pic">
+    <div class="box"><img src="./dolomites-6211005_1920.jpg" alt="" height="300px" width="250px"> <span><b>Switzerland, Italy</b></span><span>Tapestry of Tradition and Innovation</span></div>
+    <div class="box"><img src="./goa-beaches-4885113_1920.jpg" alt="" height="300px" width="250px"><span><b>TGoa, India</b></span><span>A Little paradise on earth</span></div>
+    <div class="box"><img src="./burj-khalifa-2212978_1920.jpg" alt="" height="300px" width="250px"><span><b>Dubai, UAE</b></span><span>Where happiness meets luxury</span></div>
+    </div>
+    </div>
+    <footer>&copy;2026.ExploreWorld All rights reserved.</footer>
+</body>
+</html>

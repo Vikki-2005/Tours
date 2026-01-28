@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: blue;
+            height: 60px;
+            width: 100vw;
+        }
+        .logo{
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .nav-links{
+            list-style: none;
+        }
+        .nav-links li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .nav-links li a:hover{
+            color:red;
+        }
+        .nav-links li a{
+            transition: 0.5s;
+        }
+        .content1{
+            height: 550px;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(48, 45, 45);
+            gap: 35px;
+            color: white;
+        }
+        .one{
+            font-size: 60px;
+        }
+        .two{
+            font-size: 20px;
+
+        }
+        button{
+            color: white;
+            background-color:red;
+            padding:20px;
+            border: red;
+            border-radius: 3px;
+        }
+        .topic{
+            font-size: 40px;
+            padding-top: 30px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 550px;
+        }
+        .content2{
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            grid-template-rows: 400px;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .foot{
+            height: 70px;
+            width: 100vw;
+            background-color: rgb(48, 45, 45);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">ExploreWorld</a>
+        <nav>
+        <ul class="nav-links"><li><a href="./index.html">Home</a></li>
+            <li><a href="./Destination.html">Destination</a></li>
+            <li><a href="./Tours.html" >Tours</a></li>
+            <li><a href="/Contacts.html">Contacts</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div class="content1">
+        <p class="one">Your Journey Begins Here</p>
+        <p class="two">Discover breathtaking destinations around the globe.</p>
+        <button>Explore Now</button>
+    </div>
+    <div class="container">
+        <div><p class="topic"><b> Popular Destinations</b></p></div>
+        <div class="content2">
+            <div class="box"><img src="./paris-7539257_1920.jpg" alt="" height="300px" width="250px"><span><b>Paris, France</b></span><span>The city of lights, love, and history</span></div>
+            <div class="box"><img src="./bali-2094098_1920.jpg" alt="" height="300px" width="250px"><span><b>Bali, Indonesia</b></span><span>Raise on tropical beaches and explore jungles</span></div>
+            <div class="box"><img src="./usa-1777986_1920.jpg" alt="" height="300px" width="250px"><span><b>New York, USA</b></span><span>Experience the city that never sleeps.</span></div>
+        </div>
+    </div>
+    <div class="foot">
+        <footer>&copy;2026.ExploreWorld All rights reserved.</footer>
+    </div>
+</body>
+</html>
